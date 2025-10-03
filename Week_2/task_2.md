@@ -91,9 +91,6 @@ click Data format -> analog ->step
 
 The above waveform shows the simulation of a DAC (Digital-to-Analog Converter) module. The digital inputs `D[9:0]` and `Dext[10:0]` are active and changing with time, while the enable signal `EN` is kept high (`1`), meaning the DAC is enabled. The reference voltages are set as `VREFH = 1` and `VREFL = 0`. The DAC output `OUT` is a real-valued signal that varies smoothly in a waveform pattern, converting the digital input values into an analog-like sinusoidal signal between 0 and 1. The presence of a `NaN` signal indicates an undefined or unused value in the testbench, but the important point is that the DAC is correctly generating an analog output corresponding to the digital inputs.
 
-Would you like me to also explain why you’re seeing `NaN` in the waveform and how to fix it in the simulation?
-
-
 ---
 
 ### 📈 Waveform Summary
