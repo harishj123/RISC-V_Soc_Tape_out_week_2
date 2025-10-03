@@ -77,6 +77,9 @@ We can observe that the **REF** signal is a consistent clock, while the **OUT** 
 
 ![image alt](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/dac_gtkwave.png?raw=true)
 
+From this waveform, we can observe the behavior of signals inside the **DAC (Digital-to-Analog Converter)** block of the `vsdbabysoc_tb` testbench. The digital inputs `D[9:0]` and `Dext[10:0]` are changing values over time, indicating active digital data being fed into the DAC. The **`EN`** signal is high (`=1`), which means the DAC is enabled. The analog output signal **`OUT`** shows varying real values (e.g., `0.396`, `0.369`, `0.343`), confirming that the DAC is converting the digital input into a corresponding analog voltage. The reference voltages are correctly set, with **`VREFH` = 1** and **`VREFL` = 0**. Overall, the waveform shows the DAC is functioning correctly, converting digital codes to analog output when enabled.
+
+
 ## To get analog output
 
 ```bash
