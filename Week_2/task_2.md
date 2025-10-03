@@ -1,60 +1,55 @@
---- 
-
-## 🧪 Week 2 - Task 2: Pre-Synthesis Simulation of VSDBabySoC
-
-### 👋 Welcome to Task 2!
-
-In this practical lab session, we simulate the `VSDBabySoC` design **before synthesis** using the open-source Verilog simulator **Icarus Verilog** and visualize the waveforms using **GTKWave**.
-
-This task demonstrates how to:
-
-* Compile a SystemVerilog testbench using `iverilog`
-* Run the simulation using `vvp`
-* View the output waveforms using `gtkwave`
 
 ---
 
-### 🛠️ Step-by-Step Commands Used
+## 🧪 Task 2 – Pre-Synthesis Simulation of VSDBabySoC
+
+### 👋 Welcome to Task 2!
+
+In this lab, we perform a **pre-synthesis simulation** of the `VSDBabySoC` design using **Icarus Verilog** and visualize the waveforms with **GTKWave**. This step helps verify functional correctness before moving to synthesis.
+
+---
+
+### 🔧 Steps Performed
 
 ```bash
-# Step 1: Navigate to project directory
+# Navigate to project directory
 cd ~/Desktop/VLSI/VSDBabySoC
 
-# Step 2: Create output directory (if not already created)
+# Create output directory for simulation
 mkdir -p output/pre_synth_sim
 
-# Step 3: Compile the testbench using Icarus Verilog
-iverilog \
-  -o output/pre_synth_sim/pre_synth_sim.out \
+# Compile the design and testbench
+iverilog -o output/pre_synth_sim/pre_synth_sim.out \
   -DPRE_SYNTH_SIM \
   -I src/include \
   -I src/module \
   src/module/testbench.v
 
-# Step 4: Run the compiled simulation
+# Run the simulation
 vvp output/pre_synth_sim/pre_synth_sim.out
 
-# Output:
-# VCD info: dumpfile pre_synth_sim.vcd opened for output.
-# testbench.v:63: $finish called at 84999000 (1ps)
-
-# Step 5: View the waveform using GTKWave
+# Open waveform in GTKWave
 gtkwave pre_synth_sim.vcd
 ```
 
 ---
 
-### 📊 Waveform Description
+### 📈 Waveform Summary
 
-The generated waveform (`pre_synth_sim.vcd`) shows the behavior of the `vsdbabysoc_tb` testbench. Key signals observed:
+* **ENb_CP** and **ENb_VCO** toggle during simulation, indicating active control logic.
+* **REF** shows a stable reference clock.
+* **OUT** toggles periodically, indicating system response.
+* **reset** remains low (inactive), allowing normal operation.
+* **VREFH** is steady at 3.3V, and **VREFL** stays low.
 
-* **ENb_CP**, **ENb_VCO**: Toggle between 0 and 1, enabling/disabling charge pump and VCO blocks.
-* **REF**: A regular clock signal used as a reference input.
-* **OUT**: Output signal from the SoC; toggles less frequently than REF.
-* **reset**: Remains low, indicating the system is not under reset.
-* **VREFH**: Holds steady at 3.3V.
-* **VREFL**: Remains low or unused in this run.
-
-This confirms the SoC's control and clock signals are functioning correctly under pre-synthesis simulation.
+The simulation ends successfully with `$finish`, confirming that the design runs as expected.
 
 ---
+
+### ✅ Conclusion
+
+This task demonstrates a successful pre-synthesis simulation of the VSDBabySoC. Key signals are behaving correctly, and the waveform confirms that the design is functionally active and stable.
+
+---
+
+Let me know if you’d like this saved as a `.md` file!
