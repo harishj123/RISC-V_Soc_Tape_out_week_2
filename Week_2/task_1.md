@@ -25,7 +25,7 @@ This makes them ideal for devices like **smartphones, wearables, IoT gadgets, an
 
 ---
 
-### 🏷️ Simple Overview of SoC Types
+### 🏷️ Overview of SoC Types
 
 SoCs come in different types depending on their intended purpose:
 
