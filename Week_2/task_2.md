@@ -70,6 +70,9 @@ gtkwave pre_synth_sim.vcd
 ```
 ![image alt](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/vsdbabysoc_tb_gtkwave.png?raw=true)
 
+We can observe that the **REF** signal is a consistent clock, while the **OUT** signal is toggling at a different frequency, indicating active behavior from the SoC's output logic. The **reset** signal remains low, meaning the system is operating normally (not in reset). `ENb_VCO` is high (disabled), and `ENb_CP` is undefined (`x`), which may affect charge pump activity. The analog reference `VREFH` is held at 3.3V, while `VREFL` remains at 0V, as expected. Overall, the simulation shows stable operation of the digital and analog control signals under normal (non-reset) conditions.
+
+
 ## The DAC output
 
 ![image alt](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/dac_gtkwave.png?raw=true)
