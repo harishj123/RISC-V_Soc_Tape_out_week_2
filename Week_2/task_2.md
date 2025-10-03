@@ -15,8 +15,30 @@ In this lab, we perform a **pre-synthesis simulation** of the `VSDBabySoC` desig
 # Navigate to project directory
 cd ~/Desktop/VLSI/VSDBabySoC
 
-# Create output directory for simulation
-mkdir -p output/pre_synth_sim
+# clone git
+git clone https://github.com/manili/VSDBabySoC.git
+
+```
+
+![image alt](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/command_1.png?raw=true)
+
+```bash
+
+# Step 1: Install python3-venv 
+sudo apt update
+sudo apt install python3-venv python3-pip
+
+# Step 2: Create and activate a virtual environment
+cd ~/VLSI/VSDBabySoC/
+python3 -m venv sp_env
+source sp_env/bin/activate
+
+# Step 3: Install SandPiper-SaaS inside the virtual environment
+pip install pyyaml click sandpiper-saas
+
+# Step 4: Convert rvmyth.tlv to Verilog
+sandpiper-saas -i ./src/module/*.tlv -o rvmyth.v --bestsv --noline -p verilog --outdir ./src/module/
+```
 
 # Compile the design and testbench
 iverilog -o output/pre_synth_sim/pre_synth_sim.out \
