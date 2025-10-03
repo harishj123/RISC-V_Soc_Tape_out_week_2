@@ -1,5 +1,3 @@
-Certainly! Here's a clean and professional version of your **Week 2 – Task 2 Practical Lab Session** report that you can include in your GitHub repository (e.g., in a `README.md` or `task2.md` file):
-
 ---
 
 ## 🧪 Week 2 - Task 2: Pre-Synthesis Simulation of VSDBabySoC
@@ -60,14 +58,3 @@ The generated waveform (`pre_synth_sim.vcd`) shows the behavior of the `vsdbabys
 This confirms the SoC's control and clock signals are functioning correctly under pre-synthesis simulation.
 
 ---
-
-### ✅ Conclusion
-
-Task 2 successfully demonstrated how to compile, simulate, and analyze the VSDBabySoC design. The simulation ran without errors, and GTKWave helped visualize the expected signal transitions.
-
-This simulation step is critical to verify the functional correctness of the design **before synthesis** and proceeding to the next stage of the VLSI design flow.
-
----
-
-Let me know if you'd like me to help turn this into a Markdown file or upload format for your GitHub repo!
-
