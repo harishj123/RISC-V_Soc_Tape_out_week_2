@@ -44,19 +44,29 @@ sandpiper-saas -i ./src/module/*.tlv -o rvmyth.v --bestsv --noline -p verilog --
 ![image alt](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/command_2.png?raw=true)
 
 
+```bash
+# change directory
+cd VLSI/VSDBabySoC/src/module
 
-# Compile the design and testbench
-iverilog -o output/pre_synth_sim/pre_synth_sim.out \
-  -DPRE_SYNTH_SIM \
-  -I src/include \
-  -I src/module \
-  src/module/testbench.v
+# iverilog
+ iverilog \ -o /home/username/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out \ 
+-DPRE_SYNTH_SIM \
+-I /home/username/Desktop/VLSI/VSDBabySoC/src/include \
+-I /home/username/Desktop/VLSI/VSDBabySoC/src/module \
+/home/username/Desktop/VLSI/VSDBabySoC/src/module/testbench.v
 
-# Run the simulation
-vvp output/pre_synth_sim/pre_synth_sim.out
+# move directory
+mkdir -p /home/username/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim
 
-# Open waveform in GTKWave
+# To confirm iverilog worked properly
+ls -l /home/username/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out
+
+# VCD Waveform is created
+vvp /home/harish/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out
+
+# gtkwave
 gtkwave pre_synth_sim.vcd
+
 ```
 
 ---
