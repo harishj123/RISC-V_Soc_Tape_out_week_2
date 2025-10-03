@@ -68,6 +68,20 @@ vvp /home/harish/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out
 gtkwave pre_synth_sim.vcd
 
 ```
+![image alt](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/vsdbabysoc_tb_gtkwave.png?raw=true)
+
+# The DAC output
+
+![image alt](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/analog_gtkwave.png?raw=true)
+
+# To get analog output
+
+```bash
+Right click -> Out in waveform
+click Data format -> analog ->step
+```
+
+![image alt](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/analog_gtkwave.png?raw=true)
 
 ---
 
