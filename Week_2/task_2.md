@@ -112,5 +112,3 @@ The simulation ends successfully with `$finish`, confirming that the design runs
 This task demonstrates a successful pre-synthesis simulation of the VSDBabySoC. Key signals are behaving correctly, and the waveform confirms that the design is functionally active and stable.
 
 ---
-
-Let me know if you’d like this saved as a `.md` file!
