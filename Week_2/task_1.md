@@ -1,5 +1,3 @@
-Absolutely! Here's a polished, attractive, and easy-to-read version of your Week 2, Task 1 journal. I've organized it clearly with engaging formatting, icons, and smooth flow to make it appealing for readers on GitHub or any markdown viewer:
-
 ---
 
 # 👋 Welcome to Week 2, Task 1: Exploring SoC Design with VSDBabySoC
@@ -155,10 +153,6 @@ Working with VSDBabySoC helped me understand:
 VSDBabySoC is more than a simple chip — it’s a **complete learning platform**. It connects digital logic, analog interfaces, and real-world system design. This task gave me a deeper understanding of SoC architecture, open-source hardware, and the digital-to-analog pipeline driving modern electronics.
 
 I look forward to further exploring **RISC-V, hardware design, and SoC innovation** in the coming tasks. 💻🔧
-
----
-
-✅ Thanks for reading! Feel free to explore the project files and dive deeper into the fascinating world of SoC design.
 
 ---
 
