@@ -38,6 +38,9 @@ pip install pyyaml click sandpiper-saas
 
 # Step 4: Convert rvmyth.tlv to Verilog
 sandpiper-saas -i ./src/module/*.tlv -o rvmyth.v --bestsv --noline -p verilog --outdir ./src/module/
+
+![image alt](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/command_2.png?raw=true)
+
 ```
 
 # Compile the design and testbench
