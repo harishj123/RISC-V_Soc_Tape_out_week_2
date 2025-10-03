@@ -7,7 +7,7 @@ Welcome to **Week 2** of the SoC design journey! This week, we dive deep into un
 ## 📚 Task 1: SoC Design Fundamentals & Introduction to VSDBabySoC  
 Explore the key concepts behind SoC technology, learn about VSDBabySoC’s architecture, components like the RVMYTH CPU, PLL, and DAC, and how they all work together to build a functioning SoC.
 
-**➡️ [Read Task 1 Summary & Explanation](./Task1_SoC_Theory_and_BabySoC.md)**
+**➡️ [Read Task 1 Summary & Explanation](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/task_1.md)**
 
 ---
 
