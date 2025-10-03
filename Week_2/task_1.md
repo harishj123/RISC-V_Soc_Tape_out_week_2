@@ -152,8 +152,4 @@ Working with VSDBabySoC helped me understand:
 
 VSDBabySoC is more than a simple chip — it’s a **complete learning platform**. It connects digital logic, analog interfaces, and real-world system design. This task gave me a deeper understanding of SoC architecture, open-source hardware, and the digital-to-analog pipeline driving modern electronics.
 
-I look forward to further exploring **RISC-V, hardware design, and SoC innovation** in the coming tasks. 💻🔧
-
 ---
-
-If you'd like, I can help you create a neat README for Task 2 or add clickable links to both tasks. Just let me know!
