@@ -64,7 +64,7 @@ mkdir -p /home/username/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim
 ls -l /home/username/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out
 
 # VCD Waveform is created
-vvp /home/harish/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out
+vvp /home/username/Desktop/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out
 
 # gtkwave
 gtkwave pre_synth_sim.vcd
