@@ -12,7 +12,7 @@ Explore the key concepts behind SoC technology, learn about VSDBabySoC’s archi
 ---
 
 ## ⚙️ Task 2: Practical Simulation of VSDBabySoC SoC Design  
-Get hands-on with the VSDBabySoC Verilog project! This task covers the project structure, module descriptions, and step-by-step instructions to run **pre-synthesis** and **post-synthesis** simulations using **Icarus Verilog** and **GTKWave**.
+Get hands-on with the VSDBabySoC Verilog project! This task covers the project structure, module descriptions, and step-by-step instructions to run **pre-synthesis** simulation using **Icarus Verilog** and **GTKWave**.
 
 **➡️ [Explore Task 2 Simulation & Verification Guide](https://github.com/harishj123/RISC-V_Soc_Tape_out_week_2/blob/main/Week_2/task_2.md)**
 
